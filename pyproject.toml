@@ -1,0 +1,19 @@
+[project]
+name = "cli-expense-tracker"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Kfir.Popilis", email = "kfir.popilis@bsel.co.il" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "typer>=0.28.0",
+]
+
+[project.scripts]
+cli-expense-tracker = "cli_expense_tracker:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
